@@ -51,8 +51,6 @@ We use [github](https://github.com/) for versioning. For the versions available,
 
 ## Authors
 
-**Sweta Chowdhury**
-
 **Prathamesh Tambe**
 
 ## Acknowledgement
