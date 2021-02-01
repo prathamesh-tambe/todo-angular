@@ -1,0 +1,46 @@
+[  
+	{  
+		"title":"Grocery Shopping",
+		"todoItems":[{  
+				"name":"vegetables",
+				"checked":0
+			},
+			{
+				"name":"juice",
+				"checked":0
+			},
+			{
+				"name":"fruits",
+				"checked":0
+			},
+			{
+				"name":"nuts/almonds",
+				"checked":0
+			}
+		],
+		"author":"Sweta Chowdhury",
+		"date":"2015/09/09"
+	},
+	{  
+		"title":"Pay Bills",
+		"todoItems":[{  
+				"name":"water",
+				"checked":0
+			},
+			{
+				"name":"electricity",
+				"checked":0
+			},
+			{
+				"name":"heater",
+				"checked":0
+			},
+			{
+				"name":"phone",
+				"checked":0
+			}
+		],
+		"author":"Prathamesh",
+		"date":"2015/10/09"
+	}
+]

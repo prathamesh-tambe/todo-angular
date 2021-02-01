@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<nav id="nav-bar" class="nav">
+  <label id="title"><img src="../assets/imgs/logo.png" /></label>
+  <label id="userName" *ngIf="authorName.length != 0">Hello {{authorName}}</label>
+</nav>
+<div class="container">
+  <input type="text" id="todoTitle" [(ngModel)]="todoTitleText" required placeholder="To Do List Title">
+  <button id="addTodo" (click)="createList()">+</button>
+</div>
+<br /><br />
+<div  *ngFor="let list of todoList; let i = index;" >
+  <div class="mainCont" *ngIf="authorName == list.author">
+  <span id="close" (click)="deleteList(i)" >X</span>
+  <label for="new-task" class="header">{{list.title}}</label>
+  <div class="itemCont"><input type="text" [(ngModel)]="itemTxt[i]" placeholder="Task Information" id="inputActionItem" class="inputText">
+    <button id="newItem" class="addNewItem" (click)="addItem(i)"></button>
+    <label for="new-task">To-Do items</label>
+    <ul id="tasks" *ngFor="let listItems of list.todoItems;let j = index; ">
+        <li [ngClass]="listItems.checked ? 'tasksComplete':''" ><input type="checkbox" [(ngModel)]="listItems.checked" ><label>{{listItems.name}}</label><button class="delete" (click)="deleteItem(i,j)"></button></li>
+    </ul>
+  </div>
+  <div id="footer">author : {{authorName}} <br> date: {{list.date}}</div>
+</div>
+</div>
+<!-- <router-outlet></router-outlet> -->
